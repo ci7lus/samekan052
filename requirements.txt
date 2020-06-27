@@ -1,0 +1,4 @@
+markovify
+tweepy
+flask
+mecab-python3

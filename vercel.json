@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.py", "use": "@vercel/python" },
+    { "src": "package.json", "use": "@vercel/static-build" },
+    { "src": "templates/index.html", "use": "@vercel/static" }
+  ],
+  "routes": [{ "src": "/.*", "dest": "/" }],
+  "build": {
+    "env": {
+      "TWITTER_ATS": "@samekan052-twitter-ats",
+      "TWITTER_AT": "@samekan052-twitter-at",
+      "TWITTER_CS": "@samekan052-twitter-cs",
+      "TWITTER_CK": "@samekan052-twitter-ck"
+    }
+  }
+}

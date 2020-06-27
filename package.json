@@ -1,0 +1,11 @@
+{
+  "name": "samekan052",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ci7lus/samekan052.git",
+  "author": "ci7lus <7887955+ci7lus@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "now-build": "./build.sh"
+  }
+}

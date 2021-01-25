@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,91 +12,111 @@
     <meta name="og:title" content="markovkun" />
     <meta name="og:description" content="{{ sentence }}" />
     <meta name="og:image" content="https://i.gyazo.com/thumb/1000/3fdade7f711b7ef2f443cc7e44bb1a1b-jpg.jpg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@2.0.2/destyle.css"
+      crossorigin="anonymous"
+    />
 </head>
 
 <body>
+
     <style>
-        html {
-            font-family: sans-serif;
-        }
+      html {
+        font-family: sans-serif;
+      }
 
-        .container {
-            min-height: 100vh;
-            min-height: -webkit-fill-available;
-            vertical-align: middle;
-            margin: auto;
-            display: inline-flex;
-            width: 100%;
-            overflow: hidden;
-        }
+      .container {
+        min-height: 100vh;
+        vertical-align: middle;
+        margin: auto;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        flex-direction: column;
+      }
 
-        .balloon5 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: fit-content;
-            margin: auto;
-            padding: 1rem;
-            padding-bottom: 5vh;
-        }
+      a {
+        color: dodgerblue;
+      }
 
-        .balloon5 .faceicon {
-            float: left;
-            margin-right: -70px;
-            width: 80px;
-        }
+      .footer {
+        text-align: right;
+        padding: 1rem;
+      }
 
-        .balloon5 .faceicon img {
-            width: 100%;
-            height: auto;
-            border: solid 3px #d7ebfe;
-            border-radius: 50%;
-        }
+      .balloon5 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
+        padding: 1rem;
+        padding-bottom: 5vh;
+      }
 
-        .balloon5 .chatting {
-            width: 100%;
-        }
+      .balloon5 .faceicon {
+        float: left;
+        margin-right: -70px;
+        width: 80px;
+      }
 
-        .says {
-            display: inline-block;
-            position: relative;
-            margin: 5px 0 0 105px;
-            padding: 17px 13px;
-            border-radius: 12px;
-            background: #d7ebfe;
-        }
+      .balloon5 .faceicon img {
+        width: 100%;
+        height: auto;
+        border: solid 3px #d7ebfe;
+        border-radius: 50%;
+      }
 
-        .says:after {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            top: 18px;
-            left: -24px;
-            border: 12px solid transparent;
-            border-right: 12px solid #d7ebfe;
-        }
+      .balloon5 .chatting {
+        width: 100%;
+      }
 
-        .says p {
-            margin: 0;
-            padding: 0;
-        }
+      .says {
+        display: inline-block;
+        position: relative;
+        margin: 5px 0 0 105px;
+        padding: 17px 13px;
+        border-radius: 12px;
+        background: #d7ebfe;
+      }
+
+      .says:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: -24px;
+        border: 12px solid transparent;
+        border-right: 12px solid #d7ebfe;
+      }
     </style>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="balloon5">
-            <div class="faceicon">
-                <img src="https://i.gyazo.com/thumb/1000/a3e818bba4561f721ac15e3c9d27dab1-jpg.jpg" alt="markovkun">
-            </div>
-            <div class="chatting">
-                <div class="says">
-                    <p>{{ sentence }}</p>
-                </div>
-            </div>
+      <div class="balloon5">
+        <div class="faceicon">
+          <img
+            src="https://i.gyazo.com/thumb/1000/a3e818bba4561f721ac15e3c9d27dab1-jpg.jpg"
+            alt="hitori goto"
+          />
         </div>
+        <div class="chatting">
+          <div class="says">
+            <p>{{ sentence }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Model:
+        <a href="https://twitter.com/bakarasukun" target="_blank">@bakarasukun</a>
+        /
+        <a href="https://github.com/ci7lus/samekan052/tree/markovkun" target="_blank"
+          >Source code</a
+        >
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

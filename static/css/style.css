@@ -4,7 +4,6 @@ html {
 
 .container {
     min-height: 100vh;
-    min-height: -webkit-fill-available;
     vertical-align: middle;
     margin: auto;
     display: inline-flex;

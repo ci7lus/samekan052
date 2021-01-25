@@ -1,36 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>samekan052</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{{ sentence }}" />
-    <link rel="icon" type="image/jpeg" href="https://i.gyazo.com/fd7745f49adad3422e900cc78fe83927.jpg" />
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="https://i.gyazo.com/fd7745f49adad3422e900cc78fe83927.jpg"
+    />
     <meta name="twitter:site" content="@ci7lus" />
     <meta name="twitter:card" content="summary" />
     <meta name="og:title" content="samekan052" />
     <meta name="og:description" content="{{ sentence }}" />
-    <meta name="og:image" content="https://i.gyazo.com/fd7745f49adad3422e900cc78fe83927.jpg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
+    <meta
+      name="og:image"
+      content="https://i.gyazo.com/fd7745f49adad3422e900cc78fe83927.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@2.0.2/destyle.css"
+      crossorigin="anonymous"
+    />
+    <style>
+      html {
+        font-family: sans-serif;
+      }
 
-<body>
+      .container {
+        min-height: 100vh;
+        vertical-align: middle;
+        margin: auto;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        flex-direction: column;
+      }
+
+      a {
+        color: dodgerblue;
+      }
+
+      .footer {
+        text-align: right;
+        padding: 1rem;
+      }
+
+      .balloon5 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
+        padding: 1rem;
+        padding-bottom: 5vh;
+      }
+
+      .balloon5 .faceicon {
+        float: left;
+        margin-right: -70px;
+        width: 80px;
+      }
+
+      .balloon5 .faceicon img {
+        width: 100%;
+        height: auto;
+        border: solid 3px #d7ebfe;
+        border-radius: 50%;
+      }
+
+      .balloon5 .chatting {
+        width: 100%;
+      }
+
+      .says {
+        display: inline-block;
+        position: relative;
+        margin: 5px 0 0 105px;
+        padding: 17px 13px;
+        border-radius: 12px;
+        background: #d7ebfe;
+      }
+
+      .says:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: -24px;
+        border: 12px solid transparent;
+        border-right: 12px solid #d7ebfe;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="balloon5">
-            <div class="faceicon">
-                <img src="https://i.gyazo.com/8c8c4cf4239766e392ff15ad06219d01.jpg" alt="samekaren">
-            </div>
-            <div class="chatting">
-                <div class="says">
-                    <p>{{ sentence }}</p>
-                </div>
-            </div>
+      <div class="balloon5">
+        <div class="faceicon">
+          <img
+            src="https://i.gyazo.com/8c8c4cf4239766e392ff15ad06219d01.jpg"
+            alt="samekaren"
+          />
         </div>
+        <div class="chatting">
+          <div class="says">
+            <p>{{ sentence }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Model:
+        <a href="https://twitter.com/samekan822" target="_blank">@samekan822</a>
+        /
+        <a href="https://github.com/ci7lus/samekan052" target="_blank"
+          >Source code</a
+        >
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

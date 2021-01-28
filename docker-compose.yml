@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: samekan052
+    build:
+      context: .
+      args:
+        USERS: samekan822
+        TWITTER_CK: xxx
+        TWITTER_CS: xxx
+        TWITTER_AT: xxx
+        TWITTER_ATS: xxx
+    restart: always
+    ports: 
+      - 822:5000/tcp

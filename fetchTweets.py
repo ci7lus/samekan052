@@ -1,9 +1,10 @@
 import os
 import tweepy
 import re
+import os
 import json
 
-users = ["samekan822"]
+users = os.getenv("USERS", "samekan822").split(",")
 
 auth = tweepy.OAuthHandler(os.environ["TWITTER_CK"],
                            os.environ["TWITTER_CS"])

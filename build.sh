@@ -1,8 +1,14 @@
 set -eu
 
+amazon-linux-extras install docker
+systemctl start docker
+docker run --rm alpine echo hoge
 CURRENT_DIR=`pwd`
 # mecab
-rpm -ivh --quiet https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-14.noarch.rpm
+yum clean metadata
+yum -y update
+yum makecache fast
+rpm -ivh https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-14.noarch.rpm
 yum -y -q install yum-utils swig
 rpm -ivh --quiet https://packages.groonga.org/centos/groonga-release-1.5.2-1.noarch.rpm
 yum makecache

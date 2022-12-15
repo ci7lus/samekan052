@@ -1,3 +1,5 @@
+set -eu
+
 CURRENT_DIR=`pwd`
 # mecab
 rpm -ivh --quiet https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-14.noarch.rpm

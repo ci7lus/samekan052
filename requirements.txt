@@ -1,5 +1,5 @@
 markovify==0.8.2
 tweepy==3.8.0
-flask==1.1.2
+flask==2.3.2
 mecab-python3==0.996.5
 flask_cors==3.0.9
